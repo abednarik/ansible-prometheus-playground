@@ -1,0 +1,4 @@
+---
+
+prometheus_components: [ "prometheus", "alertmanager", "node_exporter" ]
+prometheus_conf_main: "files/prometheus/prometheus.yml"

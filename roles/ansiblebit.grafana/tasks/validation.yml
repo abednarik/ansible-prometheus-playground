@@ -1,0 +1,27 @@
+---
+# file: grafana/tasks/validation.yml
+#
+# validation tasks.
+#
+
+- name: ensure mandatory variables are set
+  fail:
+    msg="{{ item }} is a mandatory variable"
+  when: "{{ item }} is not defined"
+  with_items:
+    - grafana_admin_password
+    - grafana_admin_user
+    - grafana_apt_dependencies
+    - grafana_apt_distribution
+    - grafana_conf_data
+    - grafana_conf_file
+    - grafana_default
+    - grafana_dir_conf
+    - grafana_dir_data
+    - grafana_dir_home
+    - grafana_dir_log
+    - grafana_dir_plugins
+    - grafana_http_port
+    - grafana_group
+    - grafana_user
+    - grafana_database

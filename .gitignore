@@ -1,0 +1,16 @@
+# Ansible files #
+#################
+**/*.retry
+
+
+# Vagrant files #
+#################
+.vagrant/
+
+# Tests files #
+###############
+test_playbook.yml
+
+# OSx files #
+#############
+**/..DS_Store

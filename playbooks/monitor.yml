@@ -1,0 +1,9 @@
+---
+
+- name: monitor.yml
+  hosts: monitor
+  become: True
+
+  roles:
+    - { role: williamyeh.prometheus,    tags: ["prometheus"] }
+    - { role: ansiblebit.grafana,       tags: ["grafana"] }

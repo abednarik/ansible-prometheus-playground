@@ -1,0 +1,24 @@
+---
+# file: grafana/meta/main.yml
+#
+# meta file
+#
+galaxy_info:
+  author: Pedro Salgado
+  description: Role to setup Grafana.
+  company: ansiblebit.org
+  license: BSD
+  min_ansible_version: 1.9.6
+  platforms:
+    - name: Debian
+      versions:
+        - wheezy
+        - jessie
+    - name: Ubuntu
+      versions:
+        - xenial
+        - trusty
+        - precise
+  galaxy_tags:
+    - web
+dependencies: []

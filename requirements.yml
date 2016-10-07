@@ -1,0 +1,9 @@
+---
+
+# prometheus role
+- src: williamyeh.prometheus
+  version: 2.3.1
+
+# grafana role
+- src: ansiblebit.grafana
+  version: v2.14.0
